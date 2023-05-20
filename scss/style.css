@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-image: url(../images/move-forward-pink-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% 0;
+  max-height: 400px;
+}
+body .container {
+  background-color: rgba(26, 26, 26, 0.841372549);
+  position: relative;
+  top: 125px;
+  width: 400px;
+  margin: 0 15% 80px 40%;
+  padding: 48px 32px 64px 32px;
+}
+body .container h1 {
+  font-size: 1.75rem;
+}
+body .container p {
+  font-size: 0.9rem;
+  margin: 16px 0 32px;
+}
+body .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  gap: 20px;
+}
+body .container form label,
+body .container form input {
+  display: block;
+  width: 100%;
+}
+body .container form label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+body .container form input {
+  border: 1px solid #d31c75;
+  padding: 4px;
+  color: rgba(26, 26, 26, 0.831372549);
+  font-size: 1rem;
+}
+body .container form button {
+  max-width: 80px;
+  padding: 6px 16px;
+  background-color: #d31c75;
+  border: none;
+}
+body .container form button:hover {
+  cursor: pointer;
+}
+body .container form button:active {
+  background-color: #af1962;
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 916px) {
+  body {
+    background-position: center;
+    background-size: 150% auto;
+    background-position: 75% 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  body .container {
+    margin: -40px auto;
+    width: 79%;
+  }
+  body .container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 180px;
+    margin: auto;
+  }
+  body .container p {
+    text-align: center;
+    margin: 16px auto 32px auto;
+  }
+  body .container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    gap: 20px;
+  }
+}
+@media screen and (max-height: 620px) {
+  body .container {
+    top: 90px;
+    padding: 16px 16px 20px 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
